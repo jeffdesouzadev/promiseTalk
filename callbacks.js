@@ -33,10 +33,10 @@ buyDozenBuns(2, (err, count) => {
   if (err) {
     console.log('Error!', err);
   } else {
-    // toEach(count, (err, eachCount) => {
-    //   if (err) {
-    //     console.log('Error!', err);
-    //   } else {
+    toEach(count, (err, eachCount) => {
+      if (err) {
+        console.log('Error!', err);
+      } else {
         pricePerEach(count, (err, cost) => {
           if (err) {
             console.log('Error!', err);
@@ -46,7 +46,7 @@ buyDozenBuns(2, (err, count) => {
             })
           }
         })
-    //   }
-    // })
+      }
+    })
   }
 })

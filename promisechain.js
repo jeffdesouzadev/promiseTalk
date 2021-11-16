@@ -38,9 +38,9 @@ function returnChange(wallet, bunTotal) {
 
 
 buyDozenBuns(2)
-// .then((dozen) => {
-//   return toEach(dozen)
-// })
+.then((dozen) => {
+  return toEach(dozen)
+})
 .then((eachCount) => {
   return pricePerEach(eachCount)
 })

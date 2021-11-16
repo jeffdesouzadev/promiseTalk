@@ -39,8 +39,8 @@ function returnChange(wallet, bunTotal) {
 async function getChange(dozenBuns) {
   try{
     const dozen = await buyDozenBuns(dozenBuns);
-    // const eachCount = await toEach(dozen);
-    const cost = await pricePerEach(dozen);
+    const eachCount = await toEach(dozen);
+    const cost = await pricePerEach(eachCount);
     const moneyLeft = await returnChange(10, cost);
     console.log('we have $', moneyLeft, ' left.');
   } catch {
