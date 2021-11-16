@@ -38,7 +38,7 @@ buyDozenBuns(2, (err, count) => {
       if (err) {
         console.log('Error!', err);
       } else {
-        pricePerEach(count, (err, cost) => {
+        pricePerEach(eachCount, (err, cost) => {
           if (err) {
             console.log('Error!', err);
           } else {
