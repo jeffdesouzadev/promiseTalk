@@ -4,7 +4,6 @@ function pricingAPI(callback) {
   }, 1000);
 }
 
-
 function buyDozenBuns(count, callback) {
     console.log('there are 2 dozen buns for sale');
     callback(null, count);
@@ -28,6 +27,8 @@ function pricePerEach(eachCount, callback) {
 function returnChange(wallet, bunTotal, callback) {
     callback(null, wallet - bunTotal);
 }
+
+
 
 buyDozenBuns(2, (err, count) => {
   if (err) {
